@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lan="en">
+<head>
+
+  <meta charset="utf-8">
+
+  <title>DBC Diagnosis Form</title>
+
+  <link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+
+  <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+
+  <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+
+</head>
+
+<body>
+  <div>
+
+    <h3 class="header">Doc Type Html's Office</h3>
+    <h3 class="header">Pre-Visit Questionnaire</h3>
+
+    <form action="#" method="POST" name="my_form" oninput="sleep_level.value=parseInt(sleep_range.value)">
+
+      <label for="reset">Press to reset form:</label>
+      <input type="reset" value="Reset"><br>
+
+      <label for="full_name">Full Name:</label><br>
+      <input type="text" name="full_name" class="full_name"><br>
+
+      <label for="ssn">Last Four Digits of SSN:<br>
+      xxx-xx-</label>
+      <input type="password" name="ssn" class="ssn" maxlength="4" size="4"><br>
+
+      <label>Date of Birth:</label><br>
+      <input type="date" name="birthday" class="birthday" value="mm/dd/yyyy" maxlength="10" size="10"><br>
+
+      <label for="sex">Sex:</label><br>
+      <input type="radio" name="sex" value="Male">Male<br>
+      <input type="radio" name="sex" value="Female">Female<br>
+
+      <label>Areas of Concern:</label><br>
+      <input type="checkbox" name="areas_concern" class="areas_concern" value="Head and neck">Head and neck<br>
+      <input type="checkbox" name="areas_concern" class="areas_concern" value="Eyes">Eyes<br>
+      <input type="checkbox" name="areas_concern" class="areas_concern" value="Bone and muscles">Bone and muscles<br>
+      <input type="checkbox" name="areas_concern" class="areas_concern" value="Fingers">Fingers<br>
+      <input type="checkbox" name="areas_concern" class="areas_concern" value="Mental health or confusion">Mental health or confusion<br>
+      <input type="checkbox" name="areas_concern" class="areas_concern" value="General health">General health<br>
+
+      <label>How Sleepy Are You?</label><br>
+      0<input type="range" id="sleep_range" max="120" value="50" step="5">120%<br>
+
+      <label for="sleep_level">Sleepiness Level: </label>
+      <output name="sleep_level" for="sleep_range"></output>%<br>
+
+      <label>What have you been doing lately?</label><br>
+      <select>
+        <option> Thinking about food
+        <option> Unicorn watching
+        <option> Dreaming
+        <option selected> Coding
+        </option>
+      </select><br>
+
+      <label for="concerns">Concerns:</label><br>
+      <textarea name="concerns" class="concerns" rows="5" cols="25">Let us know what other health concerns you have in mind</textarea><br>
+
+      <input type="submit" value="Submit">
+
+    </form>
+  </div>
+</body>
+</html>
